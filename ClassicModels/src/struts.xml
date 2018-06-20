@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd"> 
+ 
+<struts>  
+<package name="default" extends="struts-default">  
+  
+<action name="hello" class="com.techienukkad.action.Hello">  
+<result name="success">hello.jsp</result>  
+</action>
+
+<!-- 
+PRODUCT SERVICES CONFIGURATION Start
+ -->
+		<action name="addProduct" class="com.techienukkad.product.action.ProductAction" method="addProduct">  
+		<result name="success">product.jsp?action=1</result> 
+		</action>
+		
+<!-- 
+PRODUCT SERVICES CONFIGURATION END
+ --> 
+</package>  
+</struts> 
